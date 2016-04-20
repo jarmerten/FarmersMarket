@@ -17,6 +17,7 @@ namespace Farmers_Market.Controllers
         // GET: Farmers
         public ActionResult Index()
         {
+            
             return View(db.Farmer.ToList());
         }
 

@@ -1,4 +1,6 @@
-﻿@{
+﻿
+@model IEnumerable<Farmers_Market.Models.Farmers>
+@{
     ViewBag.Title = "Home Page";
 }
 <html>
@@ -12,7 +14,7 @@
     <style>
         html, body {
             height: 900px;
-            margin: 0;
+            margin: 50px;
             padding: 0;
                    }
 
@@ -26,7 +28,7 @@
             left: 250px;
             z-index: 5;
             background-color: #fff;
-            padding: 5px;
+            padding: 0px;
             border: 1px solid #999;
             text-align: center;
             font-family: 'Roboto','sans-serif';
@@ -45,20 +47,18 @@
     <div id="floating-panel">
         <b>Start: </b>
         <select id="start">
-            <option value="penn station, new york, ny">Penn Station</option>
-            <option value="grand central station, new york, ny">Grand Central Station</option>
-            <option value="625 8th Avenue, New York, NY, 10018">Port Authority Bus Terminal</option>
-            <option value="staten island ferry terminal, new york, ny">Staten Island Ferry Terminal</option>
-            <option value="101 E 125th Street, New York, NY">Harlem - 125th St Station</option>
+            @foreach (var farmer in Model)
+            {
+                <option value="@farmer.Address">@farmer.CompanyName</option>
+            }
+            <option value="4024 Hillside Rd Slinger, WI 53086">FarmFresh</option> 
+            <option value="4024 Hillside Rd Slinger, WI 53086">TatorHeaven</option> 
         </select>
         <b>End: </b>
         <select id="end">
-            <option value="260 Broadway New York NY 10007">City Hall</option>
-            <option value="W 49th St & 5th Ave, New York, NY 10020">Rockefeller Center</option>
-            <option value="moma, New York, NY">MOMA</option>
-            <option value="350 5th Ave, New York, NY, 10118">Empire State Building</option>
-            <option value="253 West 125th Street, New York, NY">Apollo Theater</option>
-            <option value="1 Wall St, New York, NY">Wall St</option>
+                <option value="4024 Hillside Rd Slinger, WI 53086">Home</option>    
+            <option value="4024 Hillside Rd Slinger, WI 53086">Grandma</option>   
+            <option value="4024 Hillside Rd Slinger, WI 53086">Mom</option>         
         </select>
     </div>
     <div id="map"></div>
@@ -74,7 +74,7 @@
         // Create a map and center it on Manhattan.
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
-          center: {lat: 40.771, lng: -73.974}
+          center: { lat: 43.0730517, lng: -89.40123019999999 }
         });
 
         // Create a renderer for directions and bind it to the map.
@@ -107,7 +107,7 @@
         directionsService.route({
           origin: document.getElementById('start').value,
           destination: document.getElementById('end').value,
-          travelMode: google.maps.TravelMode.WALKING
+          travelMode: google.maps.TravelMode.DRIVING
         }, function(response, status) {
           // Route the directions and pass the response to a function to create
           // markers for each step.

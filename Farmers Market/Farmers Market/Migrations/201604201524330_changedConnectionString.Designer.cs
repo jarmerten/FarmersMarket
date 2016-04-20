@@ -7,13 +7,13 @@ namespace Farmers_Market.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class companyname : IMigrationMetadata
+    public sealed partial class changedConnectionString : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(companyname));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(changedConnectionString));
         
         string IMigrationMetadata.Id
         {
-            get { return "201604191612446_company name"; }
+            get { return "201604201524330_changedConnectionString"; }
         }
         
         string IMigrationMetadata.Source

@@ -257,49 +257,21 @@
     <Compile Include="Migrations\201604191456127_added register.Designer.cs">
       <DependentUpon>201604191456127_added register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604191529544_made it so only one can be entered.cs" />
-    <Compile Include="Migrations\201604191529544_made it so only one can be entered.Designer.cs">
-      <DependentUpon>201604191529544_made it so only one can be entered.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201604191533328_made things not required.cs" />
     <Compile Include="Migrations\201604191533328_made things not required.Designer.cs">
       <DependentUpon>201604191533328_made things not required.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604191541214_fix call.cs" />
-    <Compile Include="Migrations\201604191541214_fix call.Designer.cs">
-      <DependentUpon>201604191541214_fix call.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604191544077_fixing.cs" />
-    <Compile Include="Migrations\201604191544077_fixing.Designer.cs">
-      <DependentUpon>201604191544077_fixing.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201604191556239_fix require.cs" />
     <Compile Include="Migrations\201604191556239_fix require.Designer.cs">
       <DependentUpon>201604191556239_fix require.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604191609429_require.cs" />
-    <Compile Include="Migrations\201604191609429_require.Designer.cs">
-      <DependentUpon>201604191609429_require.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604191612446_company name.cs" />
-    <Compile Include="Migrations\201604191612446_company name.Designer.cs">
-      <DependentUpon>201604191612446_company name.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201604191617277_compamny ame.cs" />
     <Compile Include="Migrations\201604191617277_compamny ame.Designer.cs">
       <DependentUpon>201604191617277_compamny ame.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604191620233_jdskfl%3bj.cs" />
-    <Compile Include="Migrations\201604191620233_jdskfl%3bj.Designer.cs">
-      <DependentUpon>201604191620233_jdskfl%3bj.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201604191626191_lkjhgfc.cs" />
     <Compile Include="Migrations\201604191626191_lkjhgfc.Designer.cs">
       <DependentUpon>201604191626191_lkjhgfc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604191628111_fsafsd.cs" />
-    <Compile Include="Migrations\201604191628111_fsafsd.Designer.cs">
-      <DependentUpon>201604191628111_fsafsd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201604191727514_added produce.cs" />
     <Compile Include="Migrations\201604191727514_added produce.Designer.cs">
@@ -313,9 +285,9 @@
     <Compile Include="Migrations\201604192020177_fjsa.Designer.cs">
       <DependentUpon>201604192020177_fjsa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604192131352_jfask.cs" />
-    <Compile Include="Migrations\201604192131352_jfask.Designer.cs">
-      <DependentUpon>201604192131352_jfask.cs</DependentUpon>
+    <Compile Include="Migrations\201604201524330_changedConnectionString.cs" />
+    <Compile Include="Migrations\201604201524330_changedConnectionString.Designer.cs">
+      <DependentUpon>201604201524330_changedConnectionString.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -355,7 +327,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -432,38 +406,17 @@
     <EmbeddedResource Include="Migrations\201604191456127_added register.resx">
       <DependentUpon>201604191456127_added register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604191529544_made it so only one can be entered.resx">
-      <DependentUpon>201604191529544_made it so only one can be entered.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604191533328_made things not required.resx">
       <DependentUpon>201604191533328_made things not required.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604191541214_fix call.resx">
-      <DependentUpon>201604191541214_fix call.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604191544077_fixing.resx">
-      <DependentUpon>201604191544077_fixing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604191556239_fix require.resx">
       <DependentUpon>201604191556239_fix require.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604191609429_require.resx">
-      <DependentUpon>201604191609429_require.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604191612446_company name.resx">
-      <DependentUpon>201604191612446_company name.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604191617277_compamny ame.resx">
       <DependentUpon>201604191617277_compamny ame.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604191620233_jdskfl%3bj.resx">
-      <DependentUpon>201604191620233_jdskfl%3bj.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604191626191_lkjhgfc.resx">
       <DependentUpon>201604191626191_lkjhgfc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604191628111_fsafsd.resx">
-      <DependentUpon>201604191628111_fsafsd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604191727514_added produce.resx">
       <DependentUpon>201604191727514_added produce.cs</DependentUpon>
@@ -474,8 +427,8 @@
     <EmbeddedResource Include="Migrations\201604192020177_fjsa.resx">
       <DependentUpon>201604192020177_fjsa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604192131352_jfask.resx">
-      <DependentUpon>201604192131352_jfask.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604201524330_changedConnectionString.resx">
+      <DependentUpon>201604201524330_changedConnectionString.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

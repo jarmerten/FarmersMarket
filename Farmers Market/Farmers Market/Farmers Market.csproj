@@ -378,6 +378,7 @@
     <Content Include="Views\Produces\Details.cshtml" />
     <Content Include="Views\Produces\Edit.cshtml" />
     <Content Include="Views\Produces\Index.cshtml" />
+    <Content Include="Views\Account\RedirectToBusinessOrStaffRegister.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
